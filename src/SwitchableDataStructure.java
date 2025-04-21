@@ -13,8 +13,10 @@ public class SwitchableDataStructure {
     public void switchMode() {
         if (isStack == true) {
             isStack = false;
+            showMode();
         } else {
             isStack = true;
+            showMode();
         }
     }
 
