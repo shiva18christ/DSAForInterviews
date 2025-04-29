@@ -8,8 +8,8 @@ public class LengthOfLastWord {
     }
 
     public static void main(String[] args) {
-        Revision revision = new Revision();
+        LengthOfLastWord word=new LengthOfLastWord();
         String s = "An apple is a fruit that is generally red";
-        System.out.println(revision.length(s));
+        System.out.println(word.length(s));
     }
 }

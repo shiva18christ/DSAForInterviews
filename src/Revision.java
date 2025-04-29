@@ -1,15 +1,22 @@
 class Revision {
-    public int length(String string) {
-        int totalLength = string.length() - 1;
-        while (totalLength >= 0 && string.charAt(totalLength) != ' ') {
-            totalLength--;
+    public void DisplayMatrix(int[][] mat) {
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(mat[i][j] + " ");
+            }
+            System.out.println();
         }
-        return string.length() - (totalLength + 1);
+
     }
 
     public static void main(String[] args) {
         Revision revision = new Revision();
-        String s = "An apple is a fruit that is red";
-        System.out.println(revision.length(s));
+        int[][] matrix = new int[2][2];
+        matrix[0][0] = 1;
+        matrix[0][1] = 2;
+        matrix[1][0] = 3;
+        matrix[1][1] = 4;
+        revision.DisplayMatrix(matrix);
+
     }
 }
